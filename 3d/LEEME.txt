@@ -1,0 +1,39 @@
+PIEZAS IMPRIMIBLES 3D - DISCONO CASERA 80-1300 MHz 
+=========================================================================
+
+Material: PETG o ASA (van al exterior; el PLA se deforma con el sol).
+Ajustes generales: capa 0,2 mm, 4 perímetros, 5 capas arriba/abajo, relleno 40 %.
+Todas las medidas se cambian en discono_3d.scad (OpenSCAD) y se re-exportan.
+
+PIEZA              TAMAÑO (mm)        UDS  RELLENO  ORIENTACIÓN / NOTAS
+spacer.stl         Ø40 x 12            1   100 %    Plano. Aislante entre disco y cono (tornillos de NAILON M4).
+jig_cono.stl       Ø60 x 24            1    40 %    Cara con texto sobre la cama. Plantilla de taladrado del buje Ø40.
+jig_disco.stl      Ø70 x 22            1    40 %    Cara con texto sobre la cama. Plantilla de taladrado del buje Ø50.
+galga30.stl        90 x 150 x 10       1    20 %    Plano. Galga para doblar las varillas del cono a 30°.
+anillo.stl         Ø194 x 10           1    40 %    Plano. Necesita cama de 200 x 200 mm o más.
+tapa_disco.stl     Ø55 x 18            1    40 %    Cara cerrada sobre la cama. Tapa antilluvia del buje del disco.
+puntas.stl         16 x Ø9 x 14,5     16    40 %    Cúpula hacia arriba. Protegen las puntas de las varillas.
+acople.stl         Ø44 x 38            1    60 %    Cara con los agujeros grandes hacia arriba. Une buje del cono y tubo Ø32.
+tapon.stl          Ø36 x 18            1    40 %    Ala sobre la cama. Tapón inferior del tubo con paso del coaxial y drenaje.
+
+CÓMO SE USAN
+1. jig_cono / jig_disco: encaja la plantilla sobre la barra de aluminio (la cara superior de la
+   barra toca el techo de la plantilla). Sujeta ambas en el tornillo de banco y taladra:
+   - por los 8 agujeros laterales con broca de 4,2 mm (agujeros radiales de las varillas),
+   - por los 8 agujeros de arriba con broca de 3,3 mm (luego roscar M4 para los prisioneros),
+   - por el central (cono 6 mm / disco 3,3 mm).
+   La marca lateral indica dónde va el agujero nº 1. Taladra despacio: el plástico solo guía.
+2. spacer: sustituye al taco de PVC. Imprímelo al 100 % para que no se aplaste.
+3. galga30: apoya el lado largo con tope en el tubo y dobla cada varilla hasta que toque la galga.
+4. anillo: se coloca unos 10 cm por debajo del buje del cono (donde las varillas forman Ø180 mm).
+   Cada varilla entra a presión por su ranura; asegúrala con una brida fina por el agujero lateral.
+   Da rigidez y mantiene las 8 varillas a 45°. El plástico no afecta a la antena.
+5. tapa_disco: se pega con silicona neutra sobre el buje del disco; las ranuras dejan pasar las varillas.
+6. puntas: se pegan con una gota de silicona o cianoacrilato en las 16 puntas.
+7. acople: el tubo Ø32 entra por abajo (fijar con 2 tornillos M4 laterales); arriba se atornilla
+   al buje del cono con 2 M4 a 16 mm del centro (taladrar y roscar esos 2 agujeros en el buje,
+   separados de los 4 del conector). El conector N y la clavija quedan dentro del hueco de Ø21.
+8. tapon: cierra el tubo por abajo; el coaxial sale por el agujero central (coax_d = 8 mm por defecto;
+   cámbialo a 5 para RG-58/H-155 o a 10,5 para RG-213).
+
+Parámetros clave en el .scad: rod_d (varilla), tube_od / tube_id (tubo), coax_d, ring_r, cone_angle.

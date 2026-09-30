@@ -1,0 +1,12 @@
+# Archivos de trabajo de laminadores y CAD
+*.gcode
+*.bgcode
+*.3mf.bak
+*.scad.bak
+*.stl.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
