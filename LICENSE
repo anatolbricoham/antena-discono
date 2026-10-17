@@ -1,0 +1,13 @@
+Antena discono — licensing
+Copyright (c) 2026 BricoHams (Anatol, EA5KAO)
+
+This repository uses different licences for different kinds of files:
+
+Software (calcular_discono.py):
+    MIT License (LICENSES/MIT.txt)
+3D models, documentation and images (3d/, img/, GUIA.md, README.md):
+    Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+    https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Software parts are licensed under the MIT License (full text: LICENSES/MIT.txt).
+If a file carries its own licence header, that header takes precedence.
+
